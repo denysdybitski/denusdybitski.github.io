@@ -1,0 +1,98 @@
+
+body,html {
+  margin: 0;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  background: #000;
+}
+ul { 
+  margin: 150px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+#hello {
+  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 2s ease forwards 2s;
+}
+
+#hello path:nth-child(1){
+  stroke-dasharray: 274.85;
+  stroke-dashoffset: 274.85;
+  animation: line-anim 2s ease forwards;
+}
+#hello path:nth-child(2){
+  stroke-dasharray: 297.91;
+  stroke-dashoffset: 297.91;
+  animation: line-anim 2s ease forwards 0.4s;
+}
+#hello path:nth-child(3){
+  stroke-dasharray: 167.48;
+  stroke-dashoffset: 167.48;
+  animation: line-anim 2s ease forwards 0.7s;
+}
+#hello path:nth-child(4){
+  stroke-dasharray: 167.48;
+  stroke-dashoffset: 167.48;
+  animation: line-anim 2s ease forwards 1.1s;
+}
+#hello path:nth-child(5){
+  stroke-dasharray: 286;
+  stroke-dashoffset: 286;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+    to {
+    fill:white;
+  }

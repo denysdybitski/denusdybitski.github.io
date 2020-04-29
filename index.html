@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="shortcut icon" href="discord-logo.png" type="image/x-icon">
+	<title>Main</title>
+</head>
+<body>
+<div class="main">
+	<ul>
+  <li><a href="inde.html">About</a></li>
+  <li><a href="portfol.html">Portfolio</a></li>
+  <li><a href="Project.html">Project</a></li>
+  <li><a href="in.html">Contact</a></li>
+</ul>
+</div>
+<svg id="hello" width="228" height="54" viewBox="0 0 228 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.140625 53V1.46094H6.96094V22.625H33.75V1.46094H40.5703V53H33.75V28.707H6.96094V53H0.140625Z" stroke="white" stroke-width="3"/>
+<path d="M52.1016 53V1.46094H89.3672V7.54297H58.9219V23.3281H87.4336V29.375H58.9219V46.918H90.5625V53H52.1016Z" stroke="white" stroke-width="3"/>
+<path d="M99.7031 53V1.46094H106.523V46.918H131.906V53H99.7031Z" stroke="white" stroke-width="3"/>
+<path d="M139.781 53V1.46094H146.602V46.918H171.984V53H139.781Z" stroke="white" stroke-width="3"/>
+<path d="M178.066 27.8984C178.066 19.3438 180.363 12.6523 184.957 7.82422C189.551 2.97266 195.48 0.546875 202.746 0.546875C207.504 0.546875 211.793 1.68359 215.613 3.95703C219.434 6.23047 222.34 9.40625 224.332 13.4844C226.348 17.5391 227.355 22.1445 227.355 27.3008C227.355 32.5273 226.301 37.2031 224.191 41.3281C222.082 45.4531 219.094 48.582 215.227 50.7148C211.359 52.8242 207.188 53.8789 202.711 53.8789C197.859 53.8789 193.523 52.707 189.703 50.3633C185.883 48.0195 182.988 44.8203 181.02 40.7656C179.051 36.7109 178.066 32.4219 178.066 27.8984ZM185.098 28.0039C185.098 34.2148 186.762 39.1133 190.09 42.6992C193.441 46.2617 197.637 48.043 202.676 48.043C207.809 48.043 212.027 46.2383 215.332 42.6289C218.66 39.0195 220.324 33.8984 220.324 27.2656C220.324 23.0703 219.609 19.4141 218.18 16.2969C216.773 13.1562 214.699 10.7305 211.957 9.01953C209.238 7.28516 206.18 6.41797 202.781 6.41797C197.953 6.41797 193.793 8.08203 190.301 11.4102C186.832 14.7148 185.098 20.2461 185.098 28.0039Z" stroke="white" stroke-width="3"/>
+</svg>
+</body>
+<script type="text/javascript">
+	//get the lenght of every path/letters
+const hello = document.querySelectorAll("#hello path");
+for (i=0; i<hello.length; i++) {
+     console.log(`Letter ${i} is ${hello[i].getTotalLength()}`);
+     }
+</script>
+</html>
